@@ -1,0 +1,48 @@
+.sidebarMain{
+    width:20%;
+
+    position:absolute;
+}
+
+.sidebarMain .sideBarContainer{
+    position: fixed;
+    top: 13%;
+    text-align: center;
+    overflow-x: hidden;
+    padding: 10px;
+    border-right:2px solid black;
+    width:20%;
+    height:83%;
+}
+
+.sidebarMain .sideBarContainer img{
+    width:150px;
+    height:150px;
+    border-radius: 40%;
+    margin:2%;
+} 
+
+.sidebarMain .sideBarContainer .linkSocial{
+    width:50px;
+    height:50px
+}
+
+
+.sidebarMain .sideBorderSize{
+    margin-top:7%;
+    display: block;
+    position:fixed;
+    text-align: center;
+    width:18%;
+}
+
+.sidebarMain .sideBorderSize img{
+    width:50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .sidebarMain {
+      display: none;
+    }
+  }

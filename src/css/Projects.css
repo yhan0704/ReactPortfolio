@@ -1,0 +1,30 @@
+/* .projectContainer {
+  margin-top:2%;
+  display: inline-block;
+}
+
+.projects {
+  text-align: center;
+  width:80%
+}
+
+.projects .projectMap{
+  margin-left:15%;
+  margin-right:15%;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+.projectContainer{
+  margin:3%
+}
+.projectMap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project{
+  margin-right: 10%;
+  margin-left: 10%;
+}
