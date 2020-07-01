@@ -1,10 +1,16 @@
-/* .mainContainer{
-    height: 85%;
-} */
+.app{
+    display: flex;
+    flex-direction: column;
+}
+.mainContainer{
+    flex:1 0 auto;
+}
 .mainContents{
     /* position: absolute;
     left: 20%;
     width:80%; */
+    text-align: center;
+    margin-left: 20%;
     text-align: center;
 }
 

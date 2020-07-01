@@ -6,7 +6,9 @@ export default function Navbar() {
   return (
     <div className="navMain">
       <div className="navContainer">
-        <h1 >Young Chan Han</h1>
+
+        <a href="/" className="navbarMyName"><h1>Young Chan Han</h1></a>
+        
         <div className="navigationBar">
           <img src="https://img.icons8.com/ios-filled/50/000000/menu.png" alt="hamburger"/>
         </div>
@@ -20,3 +22,4 @@ export default function Navbar() {
     </div>
   );
 }
+
