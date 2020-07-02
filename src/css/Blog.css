@@ -1,0 +1,11 @@
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.contents .blogMap{
+    margin:2%;
+}

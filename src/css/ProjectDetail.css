@@ -1,0 +1,22 @@
+.projectDetailContainer{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.projectDetailContainer .contents{
+    display: flex;
+    align-items: center;
+}
+
+.ul{
+    margin-right:10%
+}
+
+.projectDetailContainer .demoFrontBack{
+    padding-top:3%;
+}
+
+.projectDetailContainer .demoFrontBack a{
+    color:blue;
+    text-decoration: none;
+}

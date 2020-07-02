@@ -8,7 +8,7 @@
   display: flex;
   position: fixed;
   justify-content: space-between;
-  border-bottom:2px solid black;
+  border-bottom:2px solid lightgrey;
   background-color: white;
   z-index: 1;
   align-items: center;
@@ -22,12 +22,12 @@
   display: flex;
   align-self: center;
   margin-right: 25%;
-  font-size: 25px;
   margin-bottom:0.5%;
 }
 
 
 .navContainer .navLink a {
+  font-size: 19px;
   color:black;
   margin: 10%;
   text-decoration: none;

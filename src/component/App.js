@@ -7,6 +7,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import ProjectDetail from "./ProjectDetail";
+import Blog from "./Blog";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" exact={true} component={About} />
             <Route path="/projects" exact={true} component={Projects} />
             <Route path="/projects/:username" exact={true} component={ProjectDetail} />
+            <Route path="/blog" exact={true} component={Blog} />
           </Switch>
         </div>
       </div>

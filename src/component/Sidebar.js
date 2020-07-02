@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Sidebar.css";
 import mainPic from "../picture/picture1.jpg";
+import resume from "../resume/YoungChan Han_Resume.pdf"
 
 export default function Sidebar() {
   return (
@@ -8,12 +9,17 @@ export default function Sidebar() {
       <div className="sideBarContainer">
         <img src={mainPic} alt="passion" />
         <br />
-        <h3>
+        <p>
           I am a driven full-stack engineer with an outstanding work ethic
           seeking a web development position.
-        </h3>
-        <br />
-        <h3>Thank you for visiting my webpage.</h3>
+        </p>
+          <a
+            href={resume}
+            download
+          >
+            My Resume{" "}
+          </a>
+        <p>Thank you for visiting my webpage.</p>
         <br />
         <a
           rel="noopener noreferrer"

@@ -15,7 +15,7 @@ export default function Navbar() {
         <div style={{marginBottom:0}} className="navLink">
           <Link to="/">About</Link>
           <Link to="/projects">Projects</Link>
-          <a href="/">Blogs</a>
+          <Link to="/blog">Blogs</Link>
           <a href="/">Contact</a>
         </div>
       </div>

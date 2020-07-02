@@ -14,7 +14,7 @@ export default function Projects() {
             <Link to={ {pathname:`/projects/${project.name}`, state: project } }>
               <img
                 className="image"
-                style={{ width: "300px", height: "300px" }}
+                style={{ width: "300px", height: "250px" }}
                 src={project.image}
                 alt={project.name}
               />
