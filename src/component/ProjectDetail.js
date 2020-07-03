@@ -14,30 +14,29 @@ export default function ProjectDetail(props) {
   } = props.location.state;
   return (
     <div className="projectDetailContainer">
-      <h1 style={{ marginTop: 0, paddingTop: "2%", textAlign: "left" }}>
-        {name}
-      </h1>
-
+      <h1 >{name}</h1>
+      <div className="demoFrontBack">
+          <a href={demo}>Demo</a>|<a href={front}>Front-End</a>
+      {back ? (
+          <a href={back}>|Back-End</a>
+          ) : null}
+        </div>
       <div className="contents">
-        <div className="ul">
-          <h4>Built with:</h4>
-          {built.map((built) => (
-            <ul>
+        <div className="unorderLink">
+          <h3 style={{textAlign:"left", marginLeft:"13%"}}>Built with:</h3>
+          {built.map((built, index) => (
+            <ul style={{textAlign:"left", marginLeft:"20px"}} key={index}>
               <li>{built}</li>
             </ul>
           ))}
           <br />
         </div>
-        <div className="p">
-        <h2>Discription of this project:</h2>
-          {paragraph.map((para) => (
-            <p>-{para}</p>
+        <div className="para">
+          <h3>Discription of this project:</h3>
+          {paragraph.map((para, index) => (
+            <p key={index}>-{para}</p>
           ))}
         </div>
-      </div>
-      <div className="demoFrontBack">
-        <a href={demo}>Demo</a>|<a href={front}>Front-End</a>|
-        <a href={back}>Back-End</a>
       </div>
       {youTube ? (
         <iframe
@@ -53,4 +52,3 @@ export default function ProjectDetail(props) {
     </div>
   );
 }
-// https://www.youtube.com/watch?v=MPAlPKZIVcw&feature=emb_title

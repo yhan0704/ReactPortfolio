@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import "../css/Projects.css";
 import projects from "../data/projects.json";
-import { Link  } from 'react-router-dom';
+import { Route, Link } from "react-router-dom";
+import ProjectDetail from "./ProjectDetail";
 
 export default function Projects() {
   const [states] = useState(projects);
   return (
     <div className="projects">
-      <h1 style={{marginTop: "0", paddingTop:"2%"}}>Projects</h1>
+      <h1 style={{ marginTop: "0", paddingTop: "2%" }}>Projects</h1>
       <div className="projectMap">
-          {states.projects.map((project) => (
-            <div className="projectContainer" key={project.id}>
-            <Link to={ {pathname:`/projects/${project.name}`, state: project } }>
+        {states.projects.map((project) => (
+          <div className="projectContainer" key={project.id}>
+            <Link
+              style={{ textDecoration: "none", color: "lightseagreen" }}
+              to={{ pathname: `/projects/${project.name}`, state: project }}
+            >
               <img
                 className="image"
-                style={{ width: "300px", height: "250px" }}
+                style={{ width: "100px", height: "100px" }}
                 src={project.image}
                 alt={project.name}
               />
-              <div className="overlay">
+              <div className="subContents">
                 <div className="text">{project.name}</div>
                 <div className="text">{project.title}</div>
               </div>
@@ -26,6 +30,8 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <Route path="/projects/" exact={true} render={()=><h3>Please choose one of my project.</h3>} />
+      <Route path="/projects/:username" exact={true} render={ProjectDetail} />
     </div>
   );
 }
