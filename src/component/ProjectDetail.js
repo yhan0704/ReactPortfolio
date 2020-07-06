@@ -2,7 +2,6 @@ import React from "react";
 import "../css/ProjectDetail.css";
 
 export default function ProjectDetail(props) {
-  console.log(props);
   const {
     name,
     built,
@@ -44,9 +43,9 @@ export default function ProjectDetail(props) {
           width="600"
           height="315"
           src={youTube}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       ) : null}
     </div>

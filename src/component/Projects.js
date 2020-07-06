@@ -9,6 +9,7 @@ export default function Projects() {
   return (
     <div className="projects">
       <h1 style={{ marginTop: "0", paddingTop: "2%" }}>Projects</h1>
+      {window.innerHeight <= 568 ? <div>Please scroll down after click</div> : null}
       <div className="projectMap">
         {states.projects.map((project) => (
           <div className="projectContainer" key={project.id}>
@@ -30,6 +31,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <hr></hr>
       <Route path="/projects/" exact={true} render={()=><h3>Please choose one of my project.</h3>} />
       <Route path="/projects/:username" exact={true} render={ProjectDetail} />
     </div>

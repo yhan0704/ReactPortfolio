@@ -5,3 +5,27 @@
   display: inline-block;
   /* position: relative; */
 }
+
+.aboutContainer .aboutImage{
+  height:100%;
+  width:auto;
+}
+
+.aboutContainer .aboutImage img{
+  width:700px;
+  height:200px;
+}
+
+@media only screen and (max-width: 450px) {
+  .aboutContainer {
+    margin-left:8%;
+    margin-right:8%
+  }
+  .aboutContainer .aboutImage img{
+    width:auto;
+    height:200px;
+  }
+  .aboutContainer h3{
+    font-size: 16px;
+  }
+}

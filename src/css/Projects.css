@@ -1,24 +1,36 @@
-.project{
+.project {
   margin-right: 10%;
   margin-left: 10%;
 }
 
-.projectContainer{
-  margin:3%
+.projectContainer {
+  margin: 3%;
 }
 
-.projectMap{
+.projectMap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.projectContainer .subcotainer{
-  color:lightseagreen
+.projectContainer .subcotainer {
+  color: lightseagreen;
 }
 
 @media only screen and (max-width: 1024px) {
-  .subContents{
-    display:none
+  .projectContainer .subContents {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .projects h3 {
+    font-size: 16px;
+  }
+
+  .projectDetailContainer .contents {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
   }
 }

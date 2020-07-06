@@ -6,8 +6,8 @@ export default function About() {
     <div className="about">
       <div className="aboutContainer">
         <h1 style={{marginTop: "0", paddingBottom:"2%", paddingTop:"3%"}}>About</h1>
-        <div>
-        <img src={passion} alt="passion" style={{ width: "700px", height: "250px" }} />
+        <div className="aboutImage">
+        <img src={passion} alt="passion" />
         </div>
         <h3>
           I am a driven full-stack engineer with an outstanding work ethic
