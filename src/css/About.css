@@ -1,9 +1,13 @@
 .aboutContainer {
   height: 80%;
   margin-left:15%;
-  margin-right:15%;
+  margin-right:20%;
   display: inline-block;
   /* position: relative; */
+}
+
+.aboutContainer p{
+  font-size: 20px;
 }
 
 .aboutContainer .aboutImage{
@@ -13,7 +17,7 @@
 
 .aboutContainer .aboutImage img{
   width:700px;
-  height:200px;
+  height:270px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -24,8 +28,5 @@
   .aboutContainer .aboutImage img{
     width:auto;
     height:200px;
-  }
-  .aboutContainer h3{
-    font-size: 16px;
   }
 }

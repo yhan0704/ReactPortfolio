@@ -5,7 +5,7 @@
 
 .sidebarMain .sideBarContainer{
     position: fixed;
-    top: 13%;
+    top: 15%;
     text-align: center;
     overflow-x: hidden;
     border-right:2px solid lightgrey;
@@ -33,7 +33,7 @@
 
 .sidebarMain .sideBorderSize{
     /* margin-top:7%; */
-    padding-top:2%;
+    padding-top:8%;
     display: block;
     position:fixed;
     text-align: center;
