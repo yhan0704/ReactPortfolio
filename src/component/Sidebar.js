@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/Sidebar.css";
-import resume from "../resume/YoungChan Han_Resume.pdf";
 import me from "../picture/me.jpeg";
 
 export default function Sidebar() {
@@ -11,12 +10,7 @@ export default function Sidebar() {
         <br />
         <p style={{ paddingTop: "5%" }}>Young's Portfolio</p>
         <p>Thank you for visiting my portfolio.</p>
-        <div style={{ marginTop: "25%" }}>
-          <a href={resume} download>
-            My Resume
-          </a>
-        </div>
-
+        
         <div className="sideBorderSize">
           <a
             rel="noopener noreferrer"
