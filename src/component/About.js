@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/About.css";
 import passion from "../picture/passion1.png";
+import resume from "../resume/YoungChan Han_Resume.pdf";
+
 export default function About() {
   return (
     <div className="about">
@@ -11,9 +13,15 @@ export default function About() {
         <div className="aboutImage">
           <img src={passion} alt="passion" />
         </div>
-        <p>Hi, My name is Young Chan Han.</p>
+        <div>
+        {window.innerWidth < 1023 ? <div style={{ marginTop: "3%" }}>
+          <a href={resume} download>
+            My Resume
+          </a>
+        </div> : null}
+      </div>
         <p>
-          Hi, My name is Young Chan Han. I am a driven fu ll-stack engineer with
+          Hi, My name is Young Chan Han. I am a driven full-stack engineer with
           an outstanding work ethic open to contributing my diverse skill set in
           a junior-level position.
         </p>
@@ -35,6 +43,7 @@ export default function About() {
           any questions you may have.
         </p>
       </div>
+
     </div>
   );
 }
