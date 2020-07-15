@@ -17,8 +17,19 @@
 }
 
 .projectDetailContainer .demoFrontBack {
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
+
+.projectDetailContainer img {
+  width:400px;
+  height:300px;
+  padding-bottom: 3%;
+}
+
+.navbar-nav{
+  background:#f8f9fa;
+}
+
 
 .projectDetailContainer .demoFrontBack a {
   color: blue;
@@ -29,4 +40,16 @@
   iframe {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 540px){
+  .projectDetailContainer .demoFrontBack img {
+    width:260px;
+    height:300px;
+  }
+
+  .projectDetailContainer .todoImage img{
+    width:100%;
+  }
+
 }

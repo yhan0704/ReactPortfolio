@@ -1,8 +1,10 @@
 import React from "react";
 import "../css/ProjectDetail.css";
+import todo from "../picture/todolist.png";
 
 export default function ProjectDetail(props) {
   const {
+    id,
     name,
     built,
     paragraph,
@@ -13,18 +15,20 @@ export default function ProjectDetail(props) {
   } = props.location.state;
   return (
     <div className="projectDetailContainer">
-      <h1 >{name}</h1>
+      <h1>{name}</h1>
       <div className="demoFrontBack">
-          <a href={demo}>Demo</a>|<a href={front}>Front-End</a>
-      {back ? (
-          <a href={back}>|Back-End</a>
-          ) : null}
-        </div>
+        {demo ? <a href={demo}>Demo|</a> : null}
+        <a href={front}>Front-End</a>
+        {back ? <a href={back}>|Back-End</a> : null}
+      </div>
+      <div className="todoImage">
+        {id === 5 ? <img src={todo} alt="todo" /> : null}
+      </div>
       <div className="contents">
         <div className="unorderLink">
-          <h3 style={{textAlign:"left", marginLeft:"13%"}}>Built with:</h3>
+          <h3 style={{ textAlign: "left", marginLeft: "13%" }}>Built with:</h3>
           {built.map((built, index) => (
-            <ul style={{textAlign:"left", marginLeft:"20px"}} key={index}>
+            <ul style={{ textAlign: "left", marginLeft: "20px" }} key={index}>
               <li>{built}</li>
             </ul>
           ))}
